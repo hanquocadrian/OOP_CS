@@ -36,7 +36,7 @@ namespace _08_Bai8
             get
             {
                 CHocvien[] dshv = new CHocvien[dmhv.Count];
-                dmhv.CopyTo(dshv, 0);
+                dmhv.Values.CopyTo(dshv, 0);
                 return dshv;
             }
         }

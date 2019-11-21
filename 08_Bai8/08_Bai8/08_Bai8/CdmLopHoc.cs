@@ -109,8 +109,7 @@ namespace _08_Bai8
             CHocvien hv = null;
             if (a!=null)
             {
-                CdmHocVien xl = new CdmHocVien();
-                hv = xl.tim(mahv);
+                hv = (CHocvien)a.Dmhv[mahv];
             }
             return hv;
         }
