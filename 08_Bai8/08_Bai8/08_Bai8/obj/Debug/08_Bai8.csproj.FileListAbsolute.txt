@@ -6,3 +6,13 @@ E:\STU AD of IT\Learn and Knowledge\University (ĐH)\STU\OOP\TH\08_Bai8\08_Bai8\
 E:\STU AD of IT\Learn and Knowledge\University (ĐH)\STU\OOP\TH\08_Bai8\08_Bai8\08_Bai8\obj\Debug\08_Bai8.csproj.GenerateResource.Cache
 E:\STU AD of IT\Learn and Knowledge\University (ĐH)\STU\OOP\TH\08_Bai8\08_Bai8\08_Bai8\obj\Debug\08_Bai8.exe
 E:\STU AD of IT\Learn and Knowledge\University (ĐH)\STU\OOP\TH\08_Bai8\08_Bai8\08_Bai8\obj\Debug\08_Bai8.pdb
+D:\hqa_github\OOP_CS\08_Bai8\08_Bai8\08_Bai8\bin\Debug\08_Bai8.exe
+D:\hqa_github\OOP_CS\08_Bai8\08_Bai8\08_Bai8\bin\Debug\08_Bai8.pdb
+D:\hqa_github\OOP_CS\08_Bai8\08_Bai8\08_Bai8\obj\Debug\08_Bai8.csprojAssemblyReference.cache
+D:\hqa_github\OOP_CS\08_Bai8\08_Bai8\08_Bai8\obj\Debug\_08_Bai8.FormHocVien.resources
+D:\hqa_github\OOP_CS\08_Bai8\08_Bai8\08_Bai8\obj\Debug\_08_Bai8.FormLopHoc.resources
+D:\hqa_github\OOP_CS\08_Bai8\08_Bai8\08_Bai8\obj\Debug\_08_Bai8.FormMain.resources
+D:\hqa_github\OOP_CS\08_Bai8\08_Bai8\08_Bai8\obj\Debug\_08_Bai8.Properties.Resources.resources
+D:\hqa_github\OOP_CS\08_Bai8\08_Bai8\08_Bai8\obj\Debug\08_Bai8.csproj.GenerateResource.cache
+D:\hqa_github\OOP_CS\08_Bai8\08_Bai8\08_Bai8\obj\Debug\08_Bai8.exe
+D:\hqa_github\OOP_CS\08_Bai8\08_Bai8\08_Bai8\obj\Debug\08_Bai8.pdb

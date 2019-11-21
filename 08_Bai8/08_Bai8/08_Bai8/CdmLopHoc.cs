@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 
 namespace _08_Bai8
@@ -25,7 +27,7 @@ namespace _08_Bai8
             get
             {
                 CLopHoc[] dslop = new CLopHoc[m_dmlop.Count];
-                m_dmlop.CopyTo(dslop, 0);
+                m_dmlop.Values.CopyTo(dslop, 0);
                 return dslop;
             }
         }
@@ -129,6 +131,37 @@ namespace _08_Bai8
             catch (Exception)
             {
                 throw;
+            }
+        }
+        public void Save()
+        {
+            FileStream fs = null;
+            try
+            {
+                fs = new FileStream("dslh.txt", FileMode.OpenOrCreate, FileAccess.Write);
+                BinaryFormatter bf = new BinaryFormatter();
+                bf.Serialize(fs, m_dmlop);
+                fs.Close();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+        public void Open()
+        {
+            FileStream fs = null;
+            try
+            {
+                fs = new FileStream("dslh.txt", FileMode.Open, FileAccess.Read);
+                BinaryFormatter bf = new BinaryFormatter();
+                m_dmlop = (Hashtable)bf.Deserialize(fs);
+                fs.Close();
+            }
+            catch (Exception)
+            {
+
             }
         }
     }

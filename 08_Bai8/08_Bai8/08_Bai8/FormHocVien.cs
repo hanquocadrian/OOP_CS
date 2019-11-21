@@ -16,6 +16,9 @@ namespace _08_Bai8
         {
             InitializeComponent();
             xl = new CdmHocVien();
+            xl.Open();
+            if (xl.dmHocVien.Count > 0)
+                hienthi();
         }
         public void hienthi()
         {
@@ -112,7 +115,11 @@ namespace _08_Bai8
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            Close();
+            xl.Save();
+            FormMain frmm = new FormMain();
+            this.Hide();
+            frmm.ShowDialog();
+            this.Close();
         }
 
         private void chkGT_CheckedChanged(object sender, EventArgs e)

@@ -15,7 +15,7 @@ namespace _08_Bai8
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormHocVien());
+            Application.Run(new FormMain());
         }
     }
 }

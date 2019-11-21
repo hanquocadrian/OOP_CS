@@ -6,6 +6,7 @@ using System.Text;
 
 namespace _08_Bai8
 {
+    [Serializable]
     class CLopHoc
     {
         private string sMalop;

@@ -5,6 +5,7 @@ using System.Text;
 
 namespace _08_Bai8
 {
+    [Serializable]
     class CHocvien
     {
         #region Attributes

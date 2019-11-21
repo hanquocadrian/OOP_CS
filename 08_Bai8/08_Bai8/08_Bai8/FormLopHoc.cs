@@ -18,6 +18,12 @@ namespace _08_Bai8
             InitializeComponent();
             xllop = new CdmLopHoc();
             xlhv = new CdmHocVien();
+            xlhv.Open();
+            if (xlhv.dmHocVien.Count > 0)
+                HienThiTatCaHV();
+            xllop.Open();
+            if (xllop.dmLop.Count > 0)
+                hienthi();
         }
 
         public void HienThiTatCaHV()
@@ -41,7 +47,7 @@ namespace _08_Bai8
             {
                 foreach (CLopHoc cr in xllop.arrayLophoc)
                 {
-                    ListViewItem li = lvwDSHV.Items.Add(cr.SMalop);
+                    ListViewItem li = lvwDSLH.Items.Add(cr.SMalop);
                     li.SubItems.Add(cr.SKhoa);
                     li.SubItems.Add(cr.SHeDaoTao);
                 }
@@ -49,6 +55,7 @@ namespace _08_Bai8
         }
         public void hienthiHV()
         {
+            lvwDSHVTL.Items.Clear();
             foreach (int j in lvwDSLH.SelectedIndices)
             {
                 if (xllop.arrayLophoc[j].Dmhv.Count > 0)
@@ -81,7 +88,82 @@ namespace _08_Bai8
             foreach (int j in lvwDSLH.SelectedIndices)
             {
                 hienthiLH(lvwDSLH.Items[j].Text);
+                hienthiHV();
                 break;
+            }
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            CLopHoc cr = new CLopHoc();
+            cr.SMalop = txtMaL.Text;
+            cr.SKhoa = txtKhoa.Text;
+            cr.SHeDaoTao = txtHDT.Text;
+            if (xllop.them(cr))
+                hienthi();
+            else
+                MessageBox.Show("Khong them lop dc");
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            foreach(int j in lvwDSLH.SelectedIndices)
+            {
+                if(xllop.xoa(lvwDSLH.Items[j].Text))
+                    hienthi();
+                lvwDSHVTL.Items.Clear();
+                break;
+            }
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            CLopHoc cr = new CLopHoc();
+            cr.SMalop = txtMaL.Text;
+            cr.SKhoa = txtKhoa.Text;
+            cr.SHeDaoTao = txtHDT.Text;
+            if (xllop.sua(cr))
+                hienthi();
+            else
+                MessageBox.Show("Khong sua lop dc");
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            xllop.Save();
+            FormMain frmm = new FormMain();
+            this.Hide();
+            frmm.ShowDialog();
+            this.Close();
+        }
+
+        private void btnThemHSVL_Click(object sender, EventArgs e)
+        {
+            foreach (int i in lvwDSLH.SelectedIndices)
+            {
+                foreach (int j in lvwDSHV.SelectedIndices)
+                {
+                    CHocvien hv = xlhv.tim(lvwDSHV.Items[j].Text);
+                    CLopHoc cr = xllop.tim(lvwDSLH.Items[i].Text);
+                    cr.Dmhv.Add(hv.SMaHV, hv);
+                    hienthiHV();
+                    break;
+                }
+                break;
+            }
+        }
+
+        private void btnXoaHSRL_Click(object sender, EventArgs e)
+        {
+            foreach (int i in lvwDSLH.SelectedIndices)
+            {
+                foreach (int j in lvwDSHVTL.SelectedIndices)
+                {
+                    CLopHoc cr = xllop.tim(lvwDSLH.Items[i].Text);
+                    cr.Dmhv.Remove(lvwDSHVTL.Items[j].Text);
+                    hienthiHV();
+                    break;
+                }
             }
         }
     }
