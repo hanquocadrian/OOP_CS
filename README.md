@@ -1,2 +1,0 @@
-# OOP_CS
-OOP_CS_STU

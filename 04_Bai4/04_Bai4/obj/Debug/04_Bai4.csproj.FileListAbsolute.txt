@@ -1,0 +1,11 @@
+E:\STU AD of IT\Learn and Knowledge\University (ĐH)\STU\OOP\TH\04_Bai4\04_Bai4\bin\Debug\04_Bai4.exe.config
+E:\STU AD of IT\Learn and Knowledge\University (ĐH)\STU\OOP\TH\04_Bai4\04_Bai4\bin\Debug\04_Bai4.exe
+E:\STU AD of IT\Learn and Knowledge\University (ĐH)\STU\OOP\TH\04_Bai4\04_Bai4\bin\Debug\04_Bai4.pdb
+E:\STU AD of IT\Learn and Knowledge\University (ĐH)\STU\OOP\TH\04_Bai4\04_Bai4\obj\Debug\04_Bai4.csprojResolveAssemblyReference.cache
+E:\STU AD of IT\Learn and Knowledge\University (ĐH)\STU\OOP\TH\04_Bai4\04_Bai4\obj\Debug\_04_Bai4.Form1.resources
+E:\STU AD of IT\Learn and Knowledge\University (ĐH)\STU\OOP\TH\04_Bai4\04_Bai4\obj\Debug\_04_Bai4.Properties.Resources.resources
+E:\STU AD of IT\Learn and Knowledge\University (ĐH)\STU\OOP\TH\04_Bai4\04_Bai4\obj\Debug\04_Bai4.csproj.GenerateResource.Cache
+E:\STU AD of IT\Learn and Knowledge\University (ĐH)\STU\OOP\TH\04_Bai4\04_Bai4\obj\Debug\04_Bai4.exe
+E:\STU AD of IT\Learn and Knowledge\University (ĐH)\STU\OOP\TH\04_Bai4\04_Bai4\obj\Debug\04_Bai4.pdb
+E:\STU AD of IT\Learn and Knowledge\University (ĐH)\STU\OOP\TH\04_Bai4\04_Bai4\obj\Debug\_04_Bai4.FormL4B1.resources
+E:\STU AD of IT\Learn and Knowledge\University (ĐH)\STU\OOP\TH\04_Bai4\04_Bai4\obj\Debug\_04_Bai4.FormL4B4.resources
